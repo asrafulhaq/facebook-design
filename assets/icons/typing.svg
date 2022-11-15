@@ -1,0 +1,58 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle {
+      animation: MoveUpDown 2s ease infinite;
+      r: 5;
+      cy: 40;
+      fill: rgb(200, 200, 200);
+    }
+    circle:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    circle:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    @keyframes MoveUpDown {
+    0% {
+      cy: 40;
+    }
+    15% {
+      cy: 30;
+    }
+    30% {
+      cy: 40;
+    }
+    100% {
+      cy: 40;
+    }
+}
+
+  </style>
+  <rect
+    width="80"
+    height="50"
+    x="10"
+    y="10"
+    rx="25"
+    ry="25"
+    style="fill:rgb(230, 230, 230)"
+  >
+     
+  </rect>
+  <g class="dots">
+  <circle
+      class="bs"
+      cx="35"
+    >
+    </circle> 
+   <circle
+      cx="50"
+    >
+    </circle> 
+   <circle
+      cx="65"
+    >
+    </circle> 
+</g>
+ 
+</svg>
