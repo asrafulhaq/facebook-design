@@ -967,3 +967,107 @@ Components
   background-image: url("../icons/port-icon-1.png");
   background-position: 0px -596px;
 }
+
+/* USER MENU ICON  */
+.fb-user-item {
+  position: relative;
+}
+.fb-user-item .user-menu-dropdown {
+  background-color: #fff;
+  position: absolute;
+  top: 43px;
+  right: 0px;
+  width: 355px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 12px rgba(52, 72, 84, 0.2);
+}
+
+.fb-user-item .user-menu-dropdown .user-data-box {
+  padding: 10px;
+  box-shadow: 0px 5px 12px rgba(52, 72, 84, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fb-user-item .user-menu-dropdown .user-data-box .user-data-box-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fb-user-item .user-menu-dropdown .user-data-box .user-data-box-item span {
+  font-weight: bold;
+}
+
+.fb-user-item .user-menu-dropdown .user-data-box a {
+  color: var(--blue-color);
+  font-size: 14px;
+  padding: 0px 7px;
+}
+
+.fb-user-item .user-menu-dropdown .user-menu-list ul li {
+  font-size: 16px;
+}
+
+.fb-user-item .user-menu-dropdown .user-menu-list ul li a {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.fb-user-item .user-menu-dropdown .user-menu-list ul li a:hover {
+  background-color: #f0f2f5;
+}
+
+.fb-user-item .user-menu-dropdown .user-menu-list ul li .user-menu-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url("../icons/port-icon-1.png");
+}
+
+.fb-user-item
+  .user-menu-dropdown
+  .user-menu-list
+  ul
+  li:nth-child(1)
+  .user-menu-icon {
+  background-position: 0px 144px;
+}
+
+.fb-user-item
+  .user-menu-dropdown
+  .user-menu-list
+  ul
+  li:nth-child(2)
+  .user-menu-icon {
+  background-position: 0px 207px;
+}
+
+.fb-user-item
+  .user-menu-dropdown
+  .user-menu-list
+  ul
+  li:nth-child(3)
+  .user-menu-icon {
+  background-position: 0px 438px;
+}
+
+.fb-user-item
+  .user-menu-dropdown
+  .user-menu-list
+  ul
+  li:nth-child(4)
+  .user-menu-icon {
+  background-position: 0px 563px;
+}
+
+.fb-user-item
+  .user-menu-dropdown
+  .user-menu-list
+  ul
+  li:nth-child(5)
+  .user-menu-icon {
+  background-position: 0px -342px;
+}
