@@ -1345,3 +1345,57 @@ Components
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.story-area .story-item.auth-user-story:before {
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.auth-user-story .auth-story-create {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-user-story .auth-story-create p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.auth-user-story .auth-story-create button {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -13px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #fff;
+  margin: auto;
+  box-sizing: content-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.auth-user-story .auth-story-create button svg {
+  background-color: var(--blue-color);
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+}
