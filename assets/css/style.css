@@ -105,7 +105,7 @@
 }
 
 body {
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI Light" !important;
 }
 
 html {
@@ -457,6 +457,7 @@ Components
   top: 0px;
   top: 0px;
   width: 100%;
+  z-index: 9999999;
 }
 
 .fb-home-menu ul {
@@ -1101,7 +1102,11 @@ Components
   width: 150px;
   cursor: pointer;
 }
-
+.reset-header-wraper .login-part {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .reset-header-wraper .login-part input {
   height: 40px;
   border: 1px solid #ccc;
@@ -1379,7 +1384,7 @@ Components
   position: absolute;
   left: 0px;
   right: 0px;
-  top: -13px;
+  top: -18px;
   background-color: #fff;
   width: 30px;
   height: 30px;
@@ -1398,4 +1403,209 @@ Components
   border-radius: 50%;
   padding: 5px;
   color: #fff;
+}
+
+/* Facebook Profile  */
+.fb-profile-header {
+  margin-top: 57px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%), 0 0px 0px rgb(0 0 0 / 10%);
+}
+
+.fb-header-shad {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  position: absolute;
+}
+
+.fb-profile-header .fb-cover-photo {
+  width: 70%;
+  height: 500px;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+}
+
+.fb-profile-header .fb-cover-photo::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.fb-profile-header .fb-cover-photo img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.fb-profile-header .fb-cover-photo button {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 900;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  background-color: #fff;
+  font-family: inherit;
+  z-index: 9999999;
+}
+
+.fb-profile-header .fb-cover-photo button:hover {
+  background-color: #f4f4f4;
+}
+
+span.camera-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/icons/profile.png");
+  background-position: 0px 156px;
+}
+
+.fb-profile-details {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform: translate(0px, -40px);
+}
+
+.fb-profile-details .profile-info {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+}
+.fb-profile-details .profile-info .profile-desc {
+  margin-bottom: 20px;
+}
+
+.fb-profile-details .profile-info .profile-desc h1 {
+  font-size: 36px;
+  font-family: inherit;
+}
+
+.fb-profile-details .profile-info .profile-desc .profile-friends-list ul {
+  display: flex;
+}
+
+.fb-profile-details .profile-info .profile-desc .profile-friends-list ul li {
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.fb-profile-details
+  .profile-info
+  .profile-desc
+  .profile-friends-list
+  ul
+  li
+  img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.profile-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+}
+
+.profile-action button {
+  padding: 7px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-action button span:first-child {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.profile-action button:nth-child(1) span.follow-icon {
+  background-image: url("../icons/profile.png");
+}
+
+.profile-action button:nth-child(2) span:first-child {
+  background-image: url("../icons/profile.png");
+  background-position: 0px 187px;
+}
+
+.profile-action button:nth-child(3) span:first-child {
+  background-image: url("../icons/profile.png");
+  background-position: 0px 120px;
+}
+
+.fb-profile-body {
+  min-height: 300px;
+  width: 100%;
+  background-color: #f0f2f5;
+}
+
+.fb-profile-menu {
+  width: 1200px;
+  margin: auto;
+  border-top: 1px solid #ccced2;
+}
+
+.fb-profile-menu ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.fb-profile-menu ul li a {
+  padding: 20px 20px;
+  display: block;
+  font-size: 16px;
+  font-family: inherit;
 }
